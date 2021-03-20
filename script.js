@@ -2,7 +2,7 @@ var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 var timeContainer = document.querySelector(".lead")
 timeContainer.innerHTML = currentTime;
 
-$("button").on("click"),function(){
+$("button").click(function(){
     var toDoTask = $('.form')
           .val()
           .trim();
@@ -11,5 +11,5 @@ $("button").on("click"),function(){
     localStorage.setItem('form', JSON.stringify(list));
     console.log ("click")
     
-}
+});
 
