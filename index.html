@@ -1,208 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <div class = "row">
-        <div class = "col-sm-1">
-         <div class = "hour">
-         <p> 9AM </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1 col-sm-1">
+        <div class="hour">
+          <p> 9AM </p>
         </div>
-        </div>
-        <div class= "col-sm-10">
-        <div class= "textarea">
-        </div>
-        </div>
-        <div class ="col-sm-1">
-        <div class = "saveBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-          </svg>
-        </div>
-        </div>
-   
-       </div>
-       <div class = "row">
-        <div class = "col-sm-1">
-         <div class = "hour">
-         <p> 10AM </p>
-       </div>
-        </div>
-        <div class= "col-sm-10">
-        <div class= "textarea">
-        </div>
-        </div>
-        <div class ="col-sm-1">
-         <div class = "saveBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-          </svg>
-         </div>
-        </div>
-   
-       </div>
-       <div class = "row">
-        <div class = "col-sm-1">
-         <div class = "hour">
-         <p> 11AM </p>
-       </div>
-        </div>
-        <div class= "col-sm-10">
-        <div class= "textarea">
-        </div>
-        </div>
-        <div class ="col-sm-1">
-         <div class = "saveBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-          </svg>
-         </div>
-        </div>
-   
       </div>
-      <div class = "row">
-       <div class = "col-sm-1">
-        <div class = "hour">
-        <p> 12PM </p>
+      <div class="col-lg-10 col-sm-9">
+        <input class="form" type="text" placeholder="" aria-label=".form-control-lg example"> <div id = "text area"></div> 
       </div>
-       </div>
-       <div class= "col-sm-10">
-       <div class= "textarea">
-       </div>
-       </div>
-       <div class ="col-sm-1">
-        <div class = "saveBtn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-           <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-         </svg>
+      <div class="col-lg-1 col-sm-1"> 
+        <div class="saveBtn">
+          <button type="button" class="saveBtn"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+              fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+              <path
+                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+            </svg></button>
         </div>
-       </div>
       </div>
-      <div class = "row">
-       <div class = "col-sm-1">
-        <div class = "hour">
-        <p> 1PM </p>
-      </div>
-       </div>
-       <div class= "col-sm-10">
-       <div class= "textarea">
-       </div>
-       </div>
-       <div class ="col-sm-1">
-        <div class = "saveBtn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-           <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-         </svg>
-        </div>
-       </div>
-      </div>
-      <div class = "row">
-       <div class = "col-sm-1">
-        <div class = "hour">
-        <p> 2PM </p>
-      </div>
-       </div>
-       <div class= "col-sm-10">
-       <div class= "textarea">
-       </div>
-       </div>
-       <div class ="col-sm-1">
-        <div class = "saveBtn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-           <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-         </svg>
-        </div>
-       </div>
-      </div>
-      <div class = "row">
-       <div class = "col-sm-1">
-        <div class = "hour">
-        <p> 3PM </p>
-      </div>
-       </div>
-       <div class= "col-sm-10">
-       <div class= "textarea">
-       </div>
-       </div>
-       <div class ="col-sm-1">
-        <div class = "saveBtn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-           <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-         </svg>
-        </div>
-       </div>
-      </div>
-      <div class = "row">
-       <div class = "col-sm-1">
-        <div class = "hour">
-        <p> 4PM </p>
-      </div>
-       </div>
-       <div class= "col-sm-10">
-       <div class= "textarea">
-       </div>
-       </div>
-       <div class ="col-sm-1">
-        <div class = "saveBtn">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-           <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-         </svg>
-        </div>
-       </div>
-      </div>
-       <div class = "row">
-        <div class = "col-sm-1">
-         <div class = "hour">
-         <p> 5 PM </p>
-       </div>
-        </div>
-        <div class= "col-sm-10">
-        <div class= "textarea">
-        </div>
-        </div>
-        <div class ="col-sm-1">
-         <div class = "saveBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-          </svg>
-         </div>
-        </div>
-   
-       </div>
     </div>
-    
-    
-      
-      <!-- Timeblocks go here -->
-    
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+
+  
+
+  </div>
+
+
+
+  <!-- Timeblocks go here -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
