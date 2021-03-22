@@ -4,24 +4,31 @@ var list = JSON.parse(localStorage.getItem('form')) || [];
 timeContainer.innerHTML = currentTime;
 
 
-$ (".row").each(function() {
-    console.log($(this).attr("hour"))
-    if($(this).attr("hour") < moment().format ("HH")) {
-       ".text-area".style.color = "grey"
+$(".row").each(function () {
+    if (parseInt($(this).attr("hour")) < moment().format("HH")) {
+    $(this).find("#text-area").addClass("past")
 
-        console.log($(this).attr("hour"));  
-    }
+    }else if (parseInt($(this).attr("hour")) == moment().format("HH")) {
+    $(this).find("#text-area").addClass("present");
     
+    }else{
+        $(this).find("#text-area").addClass("future")
+    }
 })
 
-$("button").click(function(){
+$("button").click(function () {
     var toDoTask = $('.form')
-          .val()
-          .trim();
+        .val()
+        .trim();
     list.push(toDoTask);
 
     localStorage.setItem('form', JSON.stringify(list));
-    console.log ("click")
-    
-});
+    console.log("click")
 
+document.onload = function(){
+   localStorage.getElementById("form")
+
+
+}
+
+});
